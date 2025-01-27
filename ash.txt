@@ -1,1 +1,26 @@
-hi,ash is a boy named ashwin
+#include<stdio.h>
+int main()
+{
+    int integer;
+    float decimal;
+    char name[50];  // Array to store the name
+
+    // Input prompts
+    printf("Enter an integer: ");
+    scanf("%d", &integer); //user input in integer
+
+    printf("Enter a float: ");
+    scanf("%f", &decimal);//user input in decimal
+
+    printf("Enter your name: ");
+    scanf(" %[^\n]", name);  // %[^\n] allows input with spaces and input in string
+
+    // Output
+    printf("\nYou entered:\n");
+    printf("Integer: %d\n", integer);
+    printf("Float: %.2f\n", decimal);
+    printf("Name: %s\n", name);
+
+    return 0;
+}
+
